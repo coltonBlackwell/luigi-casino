@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Mix and match</title>
+  </head>
+  <style>
+
+    #card1 {
+      border: 4px solid black;
+      height: 300px;
+      width: 150px;
+      float:  left;
+      margin: 10px;
+      text-align: center;
+      background-color: #279100;
+    }
+
+    #card2 {
+      border: 4px solid black;
+      height: 300px;
+      width: 150px;
+      float:  left;
+      margin: 10px;
+      text-align: center;
+      background-color: #279100;
+    }
+
+    #card3 {
+      border: 4px solid black;
+      height: 300px;
+      width: 150px;
+      float:  left;
+      margin: 10px;
+      text-align: center;
+      background-color: #279100;
+    }
+
+    #card4 {
+      border: 4px solid black;
+      height: 300px;
+      width: 150px;
+      float:  left;
+      margin: 10px;
+      text-align: center;
+      background-color: #279100;
+    }
+
+    body {
+        background: url(https://external-preview.redd.it/_Y8NkqgclbohRTgAKGdnVJ4z52Ce7gkExmb3F2nYsWs.png?auto=webp&s=4b01775e1514b4e52d56fc6a03cfb9d12606c5fd);
+        background-repeat: no-repeat;
+        background-size: auto;
+        length: 1000px;
+        background-size: 1200px;
+        width: 400px;
+        height: 300px;
+    }
+
+    .side {
+      background-color: #4b5c45;
+      height: 885px;
+      width:706px;
+      border: 20px solid black;
+      position: absolute;
+      right: 0;
+      top: -5px;
+    }
+
+    .middleSide {
+      height: 100px;
+      background-image: url("https://www.mariowiki.com/images/thumb/f/f7/NSMBU_Starcoin_Artwork.png/1200px-NSMBU_Starcoin_Artwork.png");
+      width: 100px;
+      border-radius: 100%;
+      font-weight: bold;
+      font-size: 20px;
+      text-align: center;
+      vertical-align: middle;
+      line-height: 100px;
+      height: 150px;
+      width: 150px;
+      background-color: #33960e;
+      position: absolute;
+      right: 450px;
+      top: 75px;
+      border: 3px  solid black;
+      }
+
+      #infoBox {
+        border: 5px;
+        position: absolute;
+      right: 100px;
+      top: 250px;
+      border: 3px  solid black;
+      background-color: white;
+      height: 150px;
+      width: 500px;
+      text-align: center;
+      }
+
+      .secoundCircle {
+        height: 100px;
+      width: 100px;
+      border-radius: 100%;
+      font-weight: bold;
+      font-size: 20px;
+      text-align: center;
+      vertical-align: middle;
+      line-height: 100px;
+      height: 150px;
+      width: 150px;
+      background-color: #33960e;
+      position: absolute;
+      right: 265px;
+      top: 450px;
+      border: 3px  solid black;
+      }
+
+    .bottom {
+        border: 5px;
+        position: absolute;
+      right: 0px;
+      top: 900px;
+      border: 3px  solid black;
+      background-color: black;
+      height: 1100px;
+      width: 3000px;
+      z-index: -1;
+      }
+
+      .finalResults {
+        border: 5px;
+        position: absolute;
+      right: 100px;
+      top: 650px;
+      border: 3px  solid black;
+      background-color: white;
+      height: 150px;
+      width: 500px;
+      text-align: center;
+      }
+
+      #cardNumber1 {
+
+        visibility: hidden;
+
+      }
+
+      #cardNumber2 {
+
+        visibility: hidden;
+
+      }
+
+      #cardNumber3 {
+
+        visibility: hidden;
+
+      }
+
+      #cardNumber4 {
+
+        visibility: hidden;
+
+      }
+
+      #bottomPhoto {
+          float: left;
+          line-height: 1em;
+          list-style: none outside none;
+          margin: 0;
+          position: relative;
+          z-index: 101;
+          height: 320px;
+          bottom:  -78px;
+          left: 200px;
+      }
+
+      #bottomPhoto2 {
+        width: 500px;
+        height: 100px;
+        color: #FFFFFF;
+        text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
+        color: #FFFFFF;
+        font-size: 150px;
+        float: left;
+          line-height: 1em;
+          list-style: none outside none;
+          margin: 0;
+          position: relative;
+          z-index: 101;
+          height: 150px;
+          bottom:  85px;
+          left: 850px;
+
+
+      }
+
+
+      #demoFont1 {
+      font-family: Impact, Charcoal, sans-serif;
+      font-size: 60px;
+      letter-spacing: 2px;
+      word-spacing: 2px;
+      color: #164704;
+      font-weight: 400;
+      text-decoration: none;
+      font-style: normal;
+      font-variant: normal;
+      text-transform: none;
+      }
+
+      #demoFont2 {
+      font-family: Impact, Charcoal, sans-serif;
+      font-size: 60px;
+      letter-spacing: 2px;
+      word-spacing: 2px;
+      color: #164704;
+      font-weight: 400;
+      text-decoration: none;
+      font-style: normal;
+      font-variant: normal;
+      text-transform: none;
+      }
+
+      #demoFont3 {
+      font-family: Impact, Charcoal, sans-serif;
+      font-size: 60px;
+      letter-spacing: 2px;
+      word-spacing: 2px;
+      color: #164704;
+      font-weight: 400;
+      text-decoration: none;
+      font-style: normal;
+      font-variant: normal;
+      text-transform: none;
+      }
+
+      #demoFont4 {
+      font-family: Impact, Charcoal, sans-serif;
+      font-size: 60px;
+      letter-spacing: 2px;
+      word-spacing: 2px;
+      color: #164704;
+      font-weight: 400;
+      text-decoration: none;
+      font-style: normal;
+      font-variant: normal;
+      text-transform: none;
+      }
+
+      .textInfo {
+        font-size: 20px;
+      }
+
+      .money {
+        font-size: 20px;
+        border: 5px solid black;
+        background-color: #33960e;
+        width: 280px;
+        height: 150px;
+        position: absolute;
+        right: 100px;
+        top: 65px;
+        border: 3px  solid black;
+      }
+
+  table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  height: 100px;
+  border:5px solid grey;
+  width: 400px;
+  right: 300px;
+}
+
+td {
+height: 100px;
+ text-align: center;
+}
+
+th {
+  height: 35px;
+  width: 250px;
+}
+
+tr
+    {
+      background-color:white;
+      color:black;
+    }
+
+.gridButton {
+  width: 250px;
+  height: 100px;
+}
+
+.sleeve1Colour {
+  background-color:#1090e6;
+}
+
+table.center {
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.shopTitle {
+  posistion: fixed;
+  right: 30px;
+  bottom: 60px;
+  z-index: -1;
+  color: white;
+  font-size: 100px;
+}
+
+#something {
+  font-family: Blippo, fantasy;
+  color: #0ba800;
+  font-size: 40px;
+
+}
+
+.stats {
+  border-style: solid;
+  border-size: 50px;
+  border-color: #076101;
+  background-color: #0a9600;
+  width: 1000px;
+  height: 350px;
+  float: left;
+  line-height: 1em;
+  list-style: none outside none;
+  margin: 10;
+  position: relative;
+  z-index: 101;
+  bottom:  375px;
+  left: 850px;
+}
+
+#statsTitle {
+text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC, 2px 21px 20px rgba(0,199,25,0);
+color: #444444;
+background: #0a9600;
+font-size: 65px;
+text-align: center;
+bottom: 20px;
+posistion: fixed;
+}
+
+#luigiGlasses {
+  position: absolute;
+  right: 1200px;
+  top: 280px;
+  visibility: hidden;
+  }
+
+
+.luigiGlassessInBox {
+  position: absolute;
+  right: 235px;
+  bottom: 70px;
+}
+
+.circleGlasses {
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 100px;
+  height: 150px;
+  width: 150px;
+  background-color: #007006;
+  position: absolute;
+  right: 600px;
+  bottom: 98px;
+  border: 3px  solid black;
+}
+
+    </style>
+  <body>
+    <div class="side"> </div>
+
+    <center>
+      <button class="middleSide" onclick="onButtonClick()"> START GAME </button>
+      <br><br>
+  </center>
+    <div><button id="card1" onclick= "pickCardsNumber1()" ><div id="demoFont1"><p id="cardNumber1" ></p></div></button></div>
+    <div><button id="card2" onclick= "pickCardsNumber2()" ><div id="demoFont2"><p id="cardNumber2"></p></div></button></div>
+    <div><button id="card3" onclick= "pickCardsNumber3()" ><div id="demoFont3"><p id="cardNumber3"></p></div></button></div>
+    <div><button id="card4" onclick= "pickCardsNumber4()" ><div id="demoFont4"><p id="cardNumber4"></p></div></button></div>
+    <br><br>
+
+
+<div id="luigiGlasses"> <img src="https://www.freepngimg.com/thumb/glasses/12-2-glasses-png-pic-thumb.png"> </div>
+
+
+<div id="infoBox">
+    <b><p class="textInfo" id="informInfo"></p></b>
+    <b><p class="textInfo" id="informInfo2"></p></b>
+</div>
+<button class="secoundCircle" onclick="endTurn()" id="endTurn">End Turn</button>
+
+<div class="finalResults">
+<b><p class="textInfo" id="finalResults"></p></b>
+</div>
+
+<div class="bottom"></div>
+
+<div id="bottomPhoto"> <img id="bottomPhoto" src='https://play.nintendo.com/images/PLAY-4638-SwitchKids2020coloring02-Luigi_Logo_v01.e1456275.png'></div>
+
+<div id="bottomPhoto2">CASINO</div>
+
+<div class="money">Entry: $5 <br> Reward: $30 <br> Your total Earnings: <b><center><p id="userEarnings"></center></b></p>
+        </div>
+
+<div>
+
+  <table class= "center" style="table-layout:fixed;">
+  <tr>
+    <th id="something">SHOP</th>
+    <th id="something">Colour</th>
+    <th id="something">Price</th>
+  </tr>
+  <tr>
+    <td><button id="sleeve1" class="gridButton" onclick="blueSleeve()" style="font-size:30px;">Buy</button></td>
+    <td style="background-color: #1090e6;"> </td>
+    <td style="width: 200px;"><p style="font-size:30px;">$110</p></td>
+  </tr>
+  <tr>
+    <td><button id="sleeve2" class="gridButton" onclick="purpleSleeve()" style="font-size:30px;">Buy</button></td>
+    <td style="background-color: #bd05f5;"></td>
+    <td><p style="font-size:30px;">$250</p></td>
+  </tr>
+  <tr>
+    <td><button id="sleeve3" class="gridButton" onclick="yellowSleeve()"  style="font-size:30px;">Buy</button></td>
+    <td style="background-color: #edce00;"></td>
+    <td><p style="font-size:30px;">$400</p></td>
+  </tr>
+</table>
+</div>
+
+<div class="stats"> <h1 id="statsTitle">Purchase Luigi Glasses</h1>
+<br><br> <button class="circleGlasses" onclick="luigiGlassButton()">BUY</button> <img class="luigiGlassessInBox" style="width: 200px;height: 200px;" src="https://www.freepngimg.com/thumb/glasses/12-2-glasses-png-pic-thumb.png">
+<br><br><br><br><br><br>
+                    <h1 id="statsTitle">For Only $550!!</h1>
+</div>
+  </body>
+  <script>
+
+var emptyArray = [];
+var userMoney = 50;
+
+    function pickCardsNumber1() {
+
+      var tellEm = (" ***You have already picked two cards...please end turn*** " + "<br>");
+      var number1;
+
+        number1 = document.getElementById("cardNumber1").innerHTML
+
+      if (emptyArray.length > 1) {
+
+         document.getElementById("informInfo2").innerHTML = (tellEm);
+
+      } else {
+
+        emptyArray.push(number1);
+
+        document.getElementById("informInfo").innerHTML += (" You have picked the number: " + number1 + "<br>");
+      }
+        document.getElementById("cardNumber1").style.visibility = "visible";
+    }
+
+    function pickCardsNumber2() {
+
+      var tellEm = (" ***You have already picked two cards...please end turn*** " + "<br>");
+       var number2;
+
+        number2 = document.getElementById("cardNumber2").innerHTML
+
+        if (emptyArray.length > 1) {
+
+          document.getElementById("informInfo2").innerHTML = (tellEm);
+
+        } else {
+
+        emptyArray.push(number2);
+
+        document.getElementById("informInfo").innerHTML += ("You have picked the number: " + number2 + "<br>");
+      }
+      document.getElementById("cardNumber2").style.visibility = "visible";
+    }
+
+    function pickCardsNumber3() {
+
+      var tellEm = (" ***You have already picked two cards...please end turn*** " + "<br>");
+       var number3;
+
+        number3 = document.getElementById("cardNumber3").innerHTML;
+
+        if (emptyArray.length > 1) {
+
+          document.getElementById("informInfo2").innerHTML = (tellEm);
+
+      } else {
+
+        emptyArray.push(number3);
+
+        document.getElementById("informInfo").innerHTML += ("You have picked the number: " + number3 + "<br>");
+      }
+      document.getElementById("cardNumber3").style.visibility = "visible";
+    }
+
+    function pickCardsNumber4() {
+
+      var tellEm = (" ***You have already picked two cards...please end turn*** " + "<br>");
+       var number4;
+
+        number4 = document.getElementById("cardNumber4").innerHTML
+
+        if (emptyArray.length > 1) {
+
+         document.getElementById("informInfo2").innerHTML = (tellEm);
+
+      } else {
+
+        emptyArray.push(number4);
+
+        document.getElementById("informInfo").innerHTML += ("You have picked the number: " + number4 + "<br>");
+
+      }
+      document.getElementById("cardNumber4").style.visibility = "visible";
+    }
+
+    function onButtonClick() {
+
+    userMoney = userMoney - 5;
+
+      document.getElementById("informInfo").innerHTML = ("");
+      document.getElementById("informInfo2").innerHTML = ("");
+      document.getElementById("finalResults").innerHTML = ("");
+
+      document.getElementById("cardNumber1").style.visibility = "hidden";
+      document.getElementById("cardNumber2").style.visibility = "hidden";
+      document.getElementById("cardNumber3").style.visibility = "hidden";
+      document.getElementById("cardNumber4").style.visibility = "hidden";
+
+
+     var cardNumber1 = Math.floor(Math.random() * 3);
+     var cardNumber2 = Math.floor(Math.random() * 3);
+     var cardNumber3 = Math.floor(Math.random() * 3);
+     var cardNumber4 = Math.floor(Math.random() * 3);
+
+    document.getElementById("cardNumber1").innerHTML = cardNumber1;
+    document.getElementById("cardNumber2").innerHTML = cardNumber2;
+    document.getElementById("cardNumber3").innerHTML = cardNumber3;
+    document.getElementById("cardNumber4").innerHTML = cardNumber4;
+
+    document.getElementById("userEarnings").innerHTML = ("$" + userMoney);
+
+    }
+
+
+function endTurn() {
+  console.log(emptyArray);
+
+  if ( emptyArray.length == 0) {
+    print = ("Press start game to enter!");
+    document.getElementById("finalResults").innerHTML = print;
+  } else if (emptyArray[0] == emptyArray[1]) {
+  print = ("Hooray! You got a pair!");
+  document.getElementById("finalResults").innerHTML = print;
+  userMoney += 30;
+  emptyArray.shift();
+  emptyArray.pop();
+  document.getElementById("userEarnings").innerHTML = ("$" +  userMoney);
+} else {
+  print = ("Please try again!");
+  document.getElementById("finalResults").innerHTML = print;
+  emptyArray.shift();
+  emptyArray.pop();
+}
+}
+
+function blueSleeve() {
+
+if (userMoney >= 110) {
+    userMoney = userMoney - 110;
+  document.getElementById("demoFont1").style.color = "#0000a8";
+  document.getElementById("demoFont2").style.color = "#0000a8";
+  document.getElementById("demoFont3").style.color = "#0000a8";
+  document.getElementById("demoFont4").style.color = "#0000a8";
+  document.getElementById("card1").style.backgroundColor = "#1090e6";
+  console.log(document.getElementById("card1").style.backgroundColor);
+  document.getElementById("card2").style.backgroundColor = "#1090e6";
+  document.getElementById("card3").style.backgroundColor = "#1090e6";
+  document.getElementById("card4").style.backgroundColor = "#1090e6";
+  document.getElementById("userEarnings").innerHTML = ("$" +  userMoney);
+  }
+}
+
+function purpleSleeve() {
+
+if (userMoney >= 250) {
+    userMoney = userMoney - 250;
+  document.getElementById("demoFont1").style.color = "#800872";
+  document.getElementById("demoFont2").style.color = "#800872";
+  document.getElementById("demoFont3").style.color = "#800872";
+  document.getElementById("demoFont4").style.color = "#800872";
+  document.getElementById("card1").style.backgroundColor = "#bd05f5";
+  console.log(document.getElementById("card1").style.backgroundColor);
+  document.getElementById("card2").style.backgroundColor = "#bd05f5";
+  document.getElementById("card3").style.backgroundColor = "#bd05f5";
+  document.getElementById("card4").style.backgroundColor = "#bd05f5";
+  document.getElementById("userEarnings").innerHTML = ("$" +  userMoney);
+ }
+}
+
+function yellowSleeve() {
+
+if (userMoney >= 400) {
+    userMoney = userMoney - 400;
+  document.getElementById("demoFont1").style.color = "#807b00";
+  document.getElementById("demoFont2").style.color = "#807b00";
+  document.getElementById("demoFont3").style.color = "#807b00";
+  document.getElementById("demoFont4").style.color = "#807b00";
+  document.getElementById("card1").style.backgroundColor = "#edce00";
+  console.log(document.getElementById("card1").style.backgroundColor);
+  document.getElementById("card2").style.backgroundColor = "#edce00";
+  document.getElementById("card3").style.backgroundColor = "#edce00";
+  document.getElementById("card4").style.backgroundColor = "#edce00";
+  document.getElementById("userEarnings").innerHTML = ("$" +  userMoney);
+ }
+}
+
+function luigiGlassButton() {
+  if (userMoney >= 550) {
+    document.getElementById("luigiGlasses").style.visibility = "visible";
+  }
+}
+    </script>
+</html>
