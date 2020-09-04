@@ -450,7 +450,7 @@ posistion: fixed;
   <script>
 
 var emptyArray = [];
-var userMoney = 50;
+var userMoney = 5000;
 
     function pickCardsNumber1() {
 
@@ -636,7 +636,9 @@ if (userMoney >= 400) {
 
 function luigiGlassButton() {
   if (userMoney >= 550) {
+    userMoney = userMoney - 550;
     document.getElementById("luigiGlasses").style.visibility = "visible";
+    document.getElementById("userEarnings").innerHTML = ("$" +  userMoney);
   }
 }
     </script>
